@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Montserrat:wght@500&display=swap');
+
+body, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,button {
+    font-family: 'Knewave', cursive;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    color: inherit;
+    font-size: 20px;
+    line-height: 1.6em;
+    max-width: 50rem;
+}
+
+.text {
+    &-c {
+        text-align: center;
+    }
+    &-r {
+        text-align: right;
+    }
+}

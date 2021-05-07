@@ -1,0 +1,76 @@
+@import 'typography.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+#app {
+    --header-height: 6rem;
+    --color-1: #173F5F;
+    --color-2: #20639B;
+    --color-3: #3CAEA3;
+    --color-4: #F6D55C;
+    --color-5: #ED553B;
+    --gutter-width: 2rem;
+}
+
+#app {
+    color: var(--color-1);
+}
+
+main {
+
+}
+
+section {
+    min-height: 100vh;
+    background: var(--color-4);
+}
+
+article {
+    max-width: 62%;
+}
+
+
+.flex {
+    display: flex;
+    &-c {
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-1 {
+        flex: 1;
+    }
+}
+
+button {
+    background: none;
+    border: 2px solid var(--color-1);
+    color: var(--color-1);
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    transition: all .3s;
+
+    &:hover {
+        background: var(--color-1);
+        color: white;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+#tooltip {
+    display: none;
+    position: fixed;
+    padding: .5rem 1rem;
+    color: white;
+    background: black;
+    border-radius: 1rem;
+    box-shadow: .5rem .5rem 1rem rgba(0,0,0,0.25);
+}
